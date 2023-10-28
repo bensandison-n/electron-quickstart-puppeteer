@@ -13,7 +13,7 @@ async function scraper(url) {
   return title;
 }
 
-document.querySelector("button").addEventListener("click", async function() {
-  const result = await scraper("http://example.com");
+document.querySelector("button").addEventListener("click", async function () {
+  const result = await scraper("https://www.bensandison.com/");
   document.querySelector("#result").innerHTML = result;
 });
